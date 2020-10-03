@@ -24,8 +24,8 @@ public class OmsController {
     @Autowired
     private OmsService omsService;
 
-    @RequestMapping("/list")
-    public ViewEntity list(@RequestBody FindRo ro) {
+    @RequestMapping("/find")
+    public ViewEntity find(@RequestBody FindRo ro) {
         CriteriaBuilder.ResultMapBuilder builder = CriteriaBuilder.resultMapBuilder();
         builder.distinct("o.id");
         builder.beginSub().eq("o.name",null).endSub();
