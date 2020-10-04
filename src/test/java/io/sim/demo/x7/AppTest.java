@@ -40,7 +40,7 @@ public class AppTest {
 
         orderController.remove(8);
 
-        omsController.list(new FindRo());
+        omsController.find(new FindRo());
     }
 
 }
