@@ -8,9 +8,9 @@ public class Order {
     private long id;
     @X(length = 500)
     private String name;
-    private long createAt;
+    private Long createAt;
     private OrderType type;
-    private long userId;
+    private Long userId;
 
     public long getId() {
         return id;
@@ -28,11 +28,11 @@ public class Order {
         this.name = name;
     }
 
-    public long getCreateAt() {
+    public Long getCreateAt() {
         return createAt;
     }
 
-    public void setCreateAt(long createAt) {
+    public void setCreateAt(Long createAt) {
         this.createAt = createAt;
     }
 
@@ -44,11 +44,11 @@ public class Order {
         this.type = type;
     }
 
-    public long getUserId() {
+    public Long getUserId() {
         return userId;
     }
 
-    public void setUserId(long userId) {
+    public void setUserId(Long userId) {
         this.userId = userId;
     }
 

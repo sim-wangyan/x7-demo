@@ -5,23 +5,23 @@ import io.xream.sqli.annotation.X;
 public class OrderLog {
 
     @X.Key
-    private long id;
-    private long orderId;
+    private Long id;
+    private Long orderId;
     private String log;
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public long getOrderId() {
+    public Long getOrderId() {
         return orderId;
     }
 
-    public void setOrderId(long orderId) {
+    public void setOrderId(Long orderId) {
         this.orderId = orderId;
     }
 

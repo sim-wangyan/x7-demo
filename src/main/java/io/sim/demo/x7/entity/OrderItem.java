@@ -5,27 +5,35 @@ import io.xream.sqli.annotation.X;
 public class OrderItem {
 
     @X.Key
-    private long id;
-    private long orderId;
-    private long userId;
+    private Long id;
+    private Long orderId;
+    private Long userId;
     private String name;
     private OrderType type;
     private Long quantity;
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public long getOrderId() {
+    public Long getOrderId() {
         return orderId;
     }
 
-    public void setOrderId(long orderId) {
+    public void setOrderId(Long orderId) {
         this.orderId = orderId;
+    }
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
     }
 
     public String getName() {
@@ -50,14 +58,6 @@ public class OrderItem {
 
     public void setQuantity(Long quantity) {
         this.quantity = quantity;
-    }
-
-    public long getUserId() {
-        return userId;
-    }
-
-    public void setUserId(long userId) {
-        this.userId = userId;
     }
 
     @Override
