@@ -6,8 +6,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>x7-demo</name>
-    <description>http://x7.xream.io</description>
-    <url>http://x7.xream.io</url>
+    <description>clickhouse orm demo for http://x7.xream.io</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -44,23 +43,23 @@
         <dependency>
             <groupId>io.xream.sqli</groupId>
             <artifactId>sqli-builder</artifactId>
-            <version>1.1.0.RELEASE</version>
+            <version>1.2.0.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>io.xream.sqli</groupId>
             <artifactId>sqli-core</artifactId>
-            <version>1.1.0.RELEASE</version>
+            <version>1.2.0.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>io.xream.sqli</groupId>
             <artifactId>sqli-repo</artifactId>
-            <version>1.1.0.RELEASE</version>
+            <version>1.2.0.RELEASE</version>
         </dependency>
 
         <dependency>
             <groupId>io.xream.x7</groupId>
             <artifactId>x7-spring-boot-starter</artifactId>
-            <version>2.5.0.RELEASE</version>
+            <version>2.6.0.RELEASE</version>
         </dependency>
 
         <dependency>
