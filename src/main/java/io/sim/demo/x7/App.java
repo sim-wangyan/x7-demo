@@ -4,11 +4,9 @@ package io.sim.demo.x7;
 import io.xream.x7.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 
 @SpringBootApplication
-@EnableTransactionManagement
 @EnableReadOnly
 @EnableX7L2Caching(timeSeconds = 300)
 @EnableX7Repository(mappingPrefix = "t_",mappingSpec = "_")
