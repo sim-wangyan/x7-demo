@@ -2,6 +2,7 @@ package io.sim.demo.x7.service;
 
 import io.sim.demo.x7.entity.Order;
 import io.sim.demo.x7.repository.OrderRepository;
+import io.xream.sqli.builder.RefreshBuilder;
 import io.xream.sqli.builder.RefreshCondition;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -27,7 +28,7 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public boolean refresh(Order order) {
         return this.orderRepository.refresh(
-                RefreshCondition.build().refresh("type",order.getType()).eq("id",order.getId())
+                RefreshBuilder.builder().refresh("type",order.getType()).eq("id",order.getId()).build()
         );
     }
 
