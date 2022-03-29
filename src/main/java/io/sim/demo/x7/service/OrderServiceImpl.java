@@ -3,7 +3,6 @@ package io.sim.demo.x7.service;
 import io.sim.demo.x7.entity.Order;
 import io.sim.demo.x7.repository.OrderRepository;
 import io.xream.sqli.builder.RefreshBuilder;
-import io.xream.sqli.builder.RefreshCondition;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
